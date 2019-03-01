@@ -97,14 +97,14 @@
         <changefreq>monthly</changefreq>
       </url>
     
-  
-    
-  
-    
       <url>
-        <loc>https://kolpinghaus-reutlingen.de/projekt/deutschkurs/</loc>
+        <loc>https://kolpinghaus-reutlingen.de/artikel/2019-02-27-fruehlingserwachen-entdecke-den-kuenstler-in-dir/</loc>
         <changefreq>monthly</changefreq>
       </url>
+    
+  
+    
+  
     
       <url>
         <loc>https://kolpinghaus-reutlingen.de/projekt/kolpinghaus-chor/</loc>
@@ -117,12 +117,22 @@
       </url>
     
       <url>
+        <loc>https://kolpinghaus-reutlingen.de/projekt/fussball/</loc>
+        <changefreq>monthly</changefreq>
+      </url>
+    
+      <url>
         <loc>https://kolpinghaus-reutlingen.de/projekt/fahrradwerkstatt/</loc>
         <changefreq>monthly</changefreq>
       </url>
     
       <url>
-        <loc>https://kolpinghaus-reutlingen.de/projekt/fussball/</loc>
+        <loc>https://kolpinghaus-reutlingen.de/projekt/deutschkurs/</loc>
+        <changefreq>monthly</changefreq>
+      </url>
+    
+      <url>
+        <loc>https://kolpinghaus-reutlingen.de/projekt/malen/</loc>
         <changefreq>monthly</changefreq>
       </url>
     
