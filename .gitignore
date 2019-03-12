@@ -4,5 +4,6 @@ _site/
 .jekyll-metadata
 README.md
 travis-ci
+CNAME
 css/
 js/
