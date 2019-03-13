@@ -2,7 +2,6 @@ _site/
 .sass-cache/
 .jekyll-cache/
 .jekyll-metadata
-README.md
 travis-*.sh
 css/
 js/
