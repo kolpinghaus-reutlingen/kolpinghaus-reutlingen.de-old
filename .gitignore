@@ -3,6 +3,6 @@ _site/
 .jekyll-cache/
 .jekyll-metadata
 README.md
-travis-ci
+travis-*.sh
 css/
 js/
