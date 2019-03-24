@@ -236,6 +236,11 @@
     </url>
   
     <url>
+      <loc>https://kolpinghaus-reutlingen.de/build-date</loc>
+      <changefreq>monthly</changefreq>
+    </url>
+  
+    <url>
       <loc>https://kolpinghaus-reutlingen.de/datenschutz/</loc>
       <changefreq>monthly</changefreq>
     </url>
