@@ -108,7 +108,7 @@
       </url>
     
       <url>
-        <loc>https://kolpinghaus-reutlingen.de/artikel/2019-04-02-buecherboerse-april-2019/</loc>
+        <loc>https://kolpinghaus-reutlingen.de/artikel/2019-04-14-meisterschueler-verabschieden-sich-vom-kolpinghaus/</loc>
         <changefreq>monthly</changefreq>
       </url>
     
@@ -208,15 +208,15 @@
         <changefreq>monthly</changefreq>
       </url>
     
+      <url>
+        <loc>https://kolpinghaus-reutlingen.de/veranstaltung/2019-04-02-buecherboerse-april-2019/</loc>
+        <changefreq>monthly</changefreq>
+      </url>
+    
   
   
     <url>
       <loc>https://kolpinghaus-reutlingen.de/404.html</loc>
-      <changefreq>monthly</changefreq>
-    </url>
-  
-    <url>
-      <loc>https://kolpinghaus-reutlingen.de/README.md</loc>
       <changefreq>monthly</changefreq>
     </url>
   
@@ -272,6 +272,11 @@
   
     <url>
       <loc>https://kolpinghaus-reutlingen.de/kontakt/</loc>
+      <changefreq>monthly</changefreq>
+    </url>
+  
+    <url>
+      <loc>https://kolpinghaus-reutlingen.de/ueber-uns/leitbild/</loc>
       <changefreq>monthly</changefreq>
     </url>
   
