@@ -117,17 +117,17 @@
         <changefreq>monthly</changefreq>
       </url>
     
+      <url>
+        <loc>https://kolpinghaus-reutlingen.de/artikel/2019-07-14-kolping-auf-der-buga/</loc>
+        <changefreq>monthly</changefreq>
+      </url>
+    
   
     
   
     
       <url>
         <loc>https://kolpinghaus-reutlingen.de/projekt/kolpinghaus-chor/</loc>
-        <changefreq>monthly</changefreq>
-      </url>
-    
-      <url>
-        <loc>https://kolpinghaus-reutlingen.de/projekt/computerkurs/</loc>
         <changefreq>monthly</changefreq>
       </url>
     
@@ -142,12 +142,22 @@
       </url>
     
       <url>
-        <loc>https://kolpinghaus-reutlingen.de/projekt/deutschkurs/</loc>
+        <loc>https://kolpinghaus-reutlingen.de/projekt/theater/</loc>
+        <changefreq>monthly</changefreq>
+      </url>
+    
+      <url>
+        <loc>https://kolpinghaus-reutlingen.de/projekt/computerkurs/</loc>
         <changefreq>monthly</changefreq>
       </url>
     
       <url>
         <loc>https://kolpinghaus-reutlingen.de/projekt/malen/</loc>
+        <changefreq>monthly</changefreq>
+      </url>
+    
+      <url>
+        <loc>https://kolpinghaus-reutlingen.de/projekt/deutschkurs/</loc>
         <changefreq>monthly</changefreq>
       </url>
     
