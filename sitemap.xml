@@ -229,7 +229,12 @@
       </url>
     
       <url>
-        <loc>https://kolpinghaus-reutlingen.de/veranstaltung/2019-07-23-Sommerfest/</loc>
+        <loc>https://kolpinghaus-reutlingen.de/veranstaltung/2019-07-23-sommerfest/</loc>
+        <changefreq>monthly</changefreq>
+      </url>
+    
+      <url>
+        <loc>https://kolpinghaus-reutlingen.de/veranstaltung/2019-10-19-buecher-boerse-oktober-2019/</loc>
         <changefreq>monthly</changefreq>
       </url>
     
