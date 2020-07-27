@@ -1,0 +1,53 @@
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=10,chrome=1">
+<meta name="date" content="{{site.time | date_to_xmlschema}}">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="canonical" href="{{ site.url }}{{ page.url }}">
+<meta http-equiv="Accept-CH" content="DPR, Viewport-Width, Width">
+<meta name="author" content="{{site.author.name}}">
+<meta name="web_author" content="{{site.author.name}}">
+<meta name="generator" content="By Hand">
+<meta name="audience" content="Alle"/>
+<meta name="copyright" content="(c) {{ site.time | date: '%Y' }} {{site.domain}}"/>
+<link rel="author" href="https://{{site.author.url}}"/>
+{% if page.description %}
+<meta name="description" content="{{ page.description }}">
+{% else %}
+{% if page.excerpt %}
+<meta name="description" content="{{ page.excerpt | strip_html }}">
+{% else %}
+<meta name="description" content="Website des Kolpinghaus Reutlingen">
+{% endif %}
+{% endif %}
+<meta name="keywords" content="Kolpinghaus, Reutlingen, Kolping, Jugendwohnheim, Wohnheim, Berufliches Internat, Studentenwohnanlage, Lehrlingsheim, Verein, Heim{% if page.keywords %}, {{page.keywords}}{% endif %} ">
+<meta name="language" content="de">
+<meta name="format-detection" content="telephone=yes">
+<meta name="robots" content="index,follow">
+<meta name="HandheldFriendly" content="true">
+<meta name="rating" content="general">
+<meta name="geo.region" content="DE-BW">
+<meta name="geo.placename" content="Reutlingen">
+<meta name="geo.position" content="48.499210,9.214184">
+<meta name="ICBM" content="48.499210,9.214184">
+<meta name="og:locale" content="de_DE">
+<meta name="og:type" content="website">
+{% if page.layout == "startseite" %}
+<meta name="og:title" content="{{ site.title }}">
+{% else %}
+<meta name="og:title" content="{{ page.title }} | {{ site.title }}">
+{% endif %}
+{% if page.description %}
+<meta name="og:description" content="{{ page.description }}">
+{% else %}
+{% if page.excerpt %}
+<meta name="og:description" content="{{ page.excerpt | strip_html }}">
+{% else %}
+<meta name="og:description" content="Website des Kolpinghaus Reutlingen">
+{% endif %}
+{% endif %}
+<meta name="og:url" content="{{ site.url }}">
+<meta name="og:site_name" content="{{ site.title }}">
+<meta name="og:image" content="{% include img-link id='kolping-k' options='w_35,h_35' folder='assets' %}">
+<link rel="icon" href="{% include img-link id='favicon.ico' folder='assets' %}">
+<meta name="google-site-verification" content="{{site.google-site-verification}}" />

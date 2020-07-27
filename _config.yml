@@ -1,0 +1,89 @@
+title: Kolpinghaus Reutlingen
+url: https://kolpinghaus-reutlingen.de
+domain: kolpinghaus-reutlingen.de
+
+source: .
+destination: _site
+
+commit: c19f8033e362050a8a4e7fb1e2cd13860d9b35e4
+image:
+  url: https://res.cloudinary.com/kolpinghaus-rt/image/upload
+  version: 1532618032
+  option:
+    default: c_lfill,g_auto,cs_srgb,q_auto
+  max:
+    w:
+    h:
+
+timezone: Europe/Berlin
+future: true
+excerpt_separator: <!--mehr-->
+
+plugins:
+   - jekyll-redirect-from
+
+kontakt:
+  city: 72764 Reutlingen
+  street: Liststraße 26
+  country: Deutschland
+  phone: 07121 43340
+  fax: 07121 43344
+  email:
+    plain: info@kolpinghaus-reutlingen.de
+    user: info
+  heimleiter: Hermann Rist
+  hours:
+    from: 8
+    to: 17
+
+author:
+  name: Patrick Haußmann
+  url: patrickhaussmann.de
+
+google-site-verification: tyvNJr99qMKWyfVYXxuD8ikqOpWjCQfdJv5WvywBGqE
+
+collections:
+  artikel:
+    output: true
+  veranstaltungen:
+    output: true
+  projekte:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: artikel
+    values:
+      layout: post
+      active: artikel
+      permalink: /artikel/:path/
+      img:
+        folder: artikel
+  - scope:
+      path: ""
+      type: veranstaltungen
+    values:
+      layout: post
+      active: veranstaltungen
+      permalink: /veranstaltung/:path/
+      img:
+        folder: veranstaltungen
+  - scope:
+      path: ""
+      type: projekte
+    values:
+      layout: post
+      active: projekte
+      permalink: /projekt/:path/
+      img:
+        folder: projekte
+
+exclude:
+  - travis-build.sh
+  - travis-test.sh
+  - travis-deploy.sh
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - aktuelles.html

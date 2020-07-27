@@ -1,0 +1,112 @@
+<div class="card mb-4">
+  <img class="card-img-top" src="" alt="">
+  <div class="card-body">
+    <h3 class="card-title"></h3>
+    <a href="{% include img-link id='IKW2020.pdf' folder='pdf' %}">
+      <img src="{% include img-link options='w_250' id='IKW2020-Plakat.jpg' folder='pdf' %}" style="max-width: 100%;" alt="">
+    </a>
+    <p class="card-text"></p>
+    <a href="{% include img-link id='IKW2020.pdf' folder='pdf' %}" class="btn btn-primary">Das Programm</a>
+  </div>
+  <div class="card-footer text-muted">{% include pretty-date date="1.10.2020" mode=2 %}</div>
+</div>
+
+<div class="card mb-4">
+  <div class="card-body">
+    <h3 class="card-title">Stellenangebot Nachtbereitschaft</h3>
+    <p class="card-text"></p>
+    <a href="{% include img-link id='stellenangebot-nachtbereitschaft.pdf' folder='pdf' %}" class="btn btn-primary">zur
+      PDF</a>
+  </div>
+</div>
+
+
+<div class="card mb-4">
+  <div class="card-body">
+    <h3 class="card-title">Bücherannahme in Zeiten von Corona</h3>
+    <a href="{% link _artikel/2020-07-13-buecherannahme-in-zeiten-von-corona.md %}" class="btn btn-primary">Mehr
+      &rarr;</a>
+  </div>
+</div>
+
+
+<div class="card mb-4">
+  <div class="card-body">
+    <div id="naechstebuecherboerse" style="display: none;">
+      <h3 class="card-title">nächste Bücher Annahme</h3>
+      <p class="card-text" id="naechstebuecherboerse-first"></p>
+      <a data-toggle="collapse" href="#collapseList" aria-expanded="false" aria-controls="collapseList">Weitere
+        Termine</a>
+      <div class="collapse" id="collapseList">
+        <br>
+        <ul style="text-align:left;" id="naechstebuecherboerse-liste">
+        </ul>
+      </div>
+      <br>
+      <small>ab 14:30 Uhr bis ca. 16:30 Uhr</small>
+      <hr>
+    </div>
+    <div>
+      <h3>Bücherbörsen</h3>
+      <ul style="text-align:left;">
+        <li>{% include pretty-date date="2020-04-25" mode=2 %}</il>
+        <li>{% include pretty-date date="2020-10-24" mode=2 %}</il>
+      </ul>
+      <a href="{% include img-link id='2020-01-24-buecherboerse-2020' folder='veranstaltungen' %}">Weitere
+        Informationen</a>
+    </div>
+  </div>
+</div>
+
+<script>
+
+  function format(date) {
+    const weekday = new Intl.DateTimeFormat('de-de', { weekday: 'long' }).format(date)
+    const year = new Intl.DateTimeFormat('de-de', { year: 'numeric' }).format(date)
+    const month = new Intl.DateTimeFormat('de-de', { month: 'long' }).format(date)
+    const day = new Intl.DateTimeFormat('de-de', { day: '2-digit' }).format(date)
+
+    return weekday + ", " + day + ". " + month + " " + year
+  }
+
+  let div_naechstebuecherboerse = document.getElementById("naechstebuecherboerse")
+  let ul_naechstebuecherboerse = document.getElementById("naechstebuecherboerse-liste")
+  let p_naechstebuecherboerse = document.getElementById("naechstebuecherboerse-first")
+
+  let dates = []
+  let now = new Date()
+
+  "2020-01-03,2020-02-07,2020-03-06,2020-05-08,2020-06-05,2020-07-03,2020-09-04,2020-11-06,2020-12-04".split(",").forEach(element => {
+    let date = new Date(element)
+    if (date < now) return
+    dates.push(date)
+  })
+
+  if (dates.length > 0) {
+    div_naechstebuecherboerse.style.display = "inherit"
+    p_naechstebuecherboerse.innerHTML = format(dates.shift())
+  }
+
+  dates.forEach(date => {
+    let li = document.createElement("li")
+    li.innerHTML = format(date)
+    ul_naechstebuecherboerse.appendChild(li)
+  })
+
+
+</script>
+
+<!--
+<div class="card mb-4">
+  <img class="card-img-top" src="" alt="">
+  <div class="card-body">
+    <h3 class="card-title"></h3>
+    <a href="">
+      <img src="" style="max-width: 100%;" alt="">
+    </a>
+    <p class="card-text"></p>
+    <a href="" class="btn btn-primary">Mehr &rarr;</a>
+  </div>
+  <div class="card-footer text-muted">{% include pretty-date date=_until mode=2 %}</div>
+</div>
+ -->
